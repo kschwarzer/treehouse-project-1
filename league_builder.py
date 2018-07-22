@@ -43,6 +43,7 @@ def divide_teams(experienced_players, inexperienced_players):
 
     teamfile.close()
 
+# Call functions
 if __name__ == '__main__':
     open_mycsv()
     experience(player_list, experienced_players, inexperienced_players)
