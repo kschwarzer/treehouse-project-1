@@ -10,7 +10,7 @@ my_teams = {}
 
 # Open file
 def open_mycsv():
-    with open('/Users/kirstenschwarzer/Code/treehouse-project-1/soccer_players.csv', 'r') as csvfile:
+    with open('soccer_players.csv', 'r') as csvfile:
         playerreader = csv.reader(csvfile)
         for row in playerreader:
             player_list.append(row)
@@ -34,7 +34,7 @@ def divide_teams(experienced_players, inexperienced_players):
     my_teams = {"Raptors": raptors, "Sharks": sharks, "Dragons": dragons}
 
     # Create output teams.txt file
-    with open("/Users/kirstenschwarzer/Code/treehouse-project-1/teams.txt", "a") as teamfile:
+    with open("teams.txt", "a") as teamfile:
         for name, players in my_teams.items():
             teamfile.write(name + "\n")
             for player in players:
